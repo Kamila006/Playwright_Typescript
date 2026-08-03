@@ -14,7 +14,7 @@ const Password ='Test@${faker.number.int({min: 1000, max: 9999})}${faker.string.
 test('URL Page', async ({ page }) => {
 await page.goto('https://www.automationexercise.com/');
 await page.getByRole('link', { name: 'Website for automation' }).click();
-await expect(page.getByRole('link', { name: 'Website for automation' })).toBeVisible();
+await expect(page.getByRole('link', { name: 'Website for automation1234' })).toBeVisible();
 });
 
 
